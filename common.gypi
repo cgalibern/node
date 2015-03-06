@@ -190,6 +190,7 @@
             'ldflags': [ '-m64' ],
           }],
           [ 'OS=="solaris"', {
+            'defines': ['_GLIBCXX_USE_C99_MATH'],
             'cflags': [ '-pthreads' ],
             'ldflags': [ '-pthreads' ],
             'cflags!': [ '-pthread' ],
